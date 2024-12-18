@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   <header>
-        <img src="images/logo.png" alt="Логотип" width="150" height="150">
-        <nav>
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Преподаватели</a></li>
-                <li><a href="">Тарифы</a></li>
-                <li><a href="">Записаться на курс</a></li>
-           </ul>
+    <header class="header">
+        <img  class="header__logo" src="images/logo.png" alt="Логотип" width="150" height="150">
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link header__link--active" href="index.html">Главная</a></li>
+                <li class="header__item"><a class="header__link" href="teachers.html">Преподаватели</a></li>
+                <li class="header__item"><a class="header__link" href="#">Тарифы</a></li>
+                <li class="header__item"><a class="header__link" href="#">Записаться на курс</a></li>
+            </ul>
         </nav>
-        <button>Вход/Регистрация</button>
-        <img src="images/fon.jpg" alt="фон" width="1000" height="600">
-        <div>
-            <p>Погружение в язык - комфортно и удобно</p>
-        </div>
-        <div>
-            <p>Первое занятие бесплатно! Мы предлагаем вам первое пробное занятие бесплатно, чтобы вы могли оценить качество преподавания и материалов, прежде чем принимать решение о подписке </p>
-            <button>Узнать подробности</button>
-        </div>
-<form action="/">
-    <h1>Вход в личный кабинет</h1>
-    <input type="tel" name="phone" placeholder="Номер телефона">
-    <input type="password" name="password" placeholder="Пароль">
-    <button>Войти</button>
-</form>"
-   </header>
-<main>
+        <button class="header__button"> Вход/Регистрация</button>
+    </header>
+    <main class="main">
+        <section class="welcome">
+          <h1 class="welcome__title">Онлайн школа иностранных языков</h1>
+          <p class="welcome__text">Погружение в язык - комфортно и удобно</p>
+        </section>
 
-</main>
-<footer>
-
-</footer>
+        <section class="promo">
+            <p class="promo__text">Первое занятие бесплатно! Мы предлагаем вам первое пробное занятие бесплатно, чтобы вы могли оценить
+                качество преподавания и материалов, прежде чем принимать решение о подписке </p>
+            <button class="promo__button" type="button">Узнать подробности</button>
+        </section>
+        <form class="form" action="/">
+            <h2 class="form__title">Вход в личный кабинет</h2>
+            <input class="form__mobile" type="tel" name="phone" placeholder="Номер телефона">
+            <input class="form__password" type="password" name="password" placeholder="Пароль">
+            <button class="form__button">Войти</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Галкиева Альмира, Окашева Ольга ИЯ-25, ИЯ-27</p>
+    </footer>
 </body>
+
 </html>

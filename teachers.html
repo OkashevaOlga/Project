@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <img src="images/logo.png" alt="Логотип" width="150" height="150">
-        <nav>
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Преподаватели</a></li>
-                <li><a href="">Тарифы</a></li>
-                <li><a href="">Записаться на курс</a></li>
-           </ul>
+    <header class="header">
+        <img class="header__logo" src="images/logo.png" alt="Логотип" width="150" height="150">
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link header__link--active" href="index.html">Главная</a></li>
+                <li class="header__item"><a class="header__link" href="teachers.html">Преподаватели</a></li>
+                <li class="header__item"><a class="header__link" href="#">Тарифы</a></li>
+                <li class="header__item"><a class="header__link" href="#">Записаться на курс</a></li>
+            </ul>
         </nav>
-        <img src="images/учитель английского.png" alt="английский" width="800" height="500">
-        <img src="images/учитель китайского.jpg" alt="китайский" width="800" height="500">
-        <img src="images/учитель немецкого.png" alt="немецкий" width="800" height="500">
-        <img src="images/учитель французского.jpg" alt="французский" width="800" height="500">
+        <button class="header__button"> Вход/Регистрация</button>
     </header>
+    <main class="main">
+        <section>
+
+            <div>
+                <h2 class="choice__title">выберите предмет</h2>
+                <details>
+                    <summary>китайский язык</summary>
+                    <img src="images/chineseteacher.jpg" alt="китайский" width="350" height="500">
+                    <p class="description__chinese"> Екатерина Анатольевна Романова - дипломированный специалист в
+                        области китайского языка, окончила НГЛУ, имеет опыт преподавания более 10 лет. Уровень владения
+                        китайским - HSK6.</p>
+                </details>
+                <details>
+                    <summary>немецкий язык</summary>
+                    <img src="images/germanteacher.png" alt="немецкий" width="400" height="500">
+                    <p>Дарья Альбертовна Гольман - жила более 8 лет в Германии, имеет опыт преподавания 5 лет, применяет инновационные методики обучения</p>
+                </details>
+                <details>
+                    <summary>французский язык</summary>
+                    <img src="images/frenchteacher.jpg" alt="французский" width="390" height="500">
+                </details>
+                <details>
+                    <summary>французский язык</summary>
+                    <img src="images/englishteacher.png" alt="английский" width="550" height="500">
+                </details>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Галкиева Альмира, Окашева Ольга ИЯ-25, ИЯ-27</p>
+    </footer>
 </body>
+
 </html>
