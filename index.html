@@ -1,49 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Онлайн школа</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
     <header class="header">
-        <img class="header__logo" src="images/logo.png" alt="Логотип" width="150" height="150">
-        <nav class="header__menu">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link header__link--active" href="index.html">Главная</a></li>
-                <li class="header__item"><a class="header__link" href="teachers.html">Преподаватели</a></li>
-                <li class="header__item"><a class="header__link" href="#">Тарифы</a></li>
-                <li class="header__item"><a class="header__link" href="#">Записаться на курс</a></li>
-            </ul>
-        </nav>
-        <button class="header__button"> Вход/Регистрация</button>
+        <div class="container">
+            <img class="header__logo" src="images/logo.png" alt="Логотип" width="150" height="150">
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link header__link--active" href="index.html">Главная</a>
+                    </li>
+                    <li class="header__item"><a class="header__link" href="teachers.html">Преподаватели</a></li>
+                    <li class="header__item"><a class="header__link" href="tariffs.html">Тарифы</a></li>
+                    <li class="header__item"><a class="header__link" href="enrollment.html">Записаться на курс</a></li>
+                </ul>
+            </nav>
+            <button class="header__button" id="authButton">Вход/Регистрация</button>
+        </div>
     </header>
     <main class="main">
         <section class="welcome">
-            <h1 class="welcome__title">Онлайн школа иностранных языков</h1>
-            <p class="welcome__text">Погружение в язык - комфортно и удобно</p>
+            <div class="container">
+                <h1 class="welcome__title">Онлайн школа иностранных языков</h1>
+                <p class="welcome__text">Погружение в язык - комфортно и удобно</p>
+            </div>
         </section>
-
         <section class="promo">
-            <p class="promo__text">Первое занятие бесплатно! Мы предлагаем вам первое пробное занятие бесплатно, чтобы
-                вы могли оценить
-                качество преподавания и материалов, прежде чем принимать решение о подписке </p>
-            <button class="promo__button" type="button">Узнать подробности</button>
+            <div class="container">
+                <p class="promo__text">Первое занятие бесплатно! Мы предлагаем вам первое пробное занятие бесплатно,
+                    чтобы
+                    вы могли оценить качество преподавания и материалов.</p>
+                <button class="promo__button">Узнать подробности</button>
+            </div>
         </section>
-        <form class="form" action="/">
-            <h2 class="form__title">Вход в личный кабинет</h2>
-            <input class="form__mobile" type="tel" name="phone" placeholder="Номер телефона">
-            <input class="form__password" type="password" name="password" placeholder="Пароль">
-            <button class="form__button">Войти</button>
-        </form>
+        <section class="login">
+            <div class="container">
+                <form class="form" action="/" method="POST">
+                    <h2 class="form__title">Вход в личный кабинет</h2>
+                    <label for="phone">Номер телефона</label>
+                    <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required>
+                    <label for="password">Пароль</label>
+                    <input class="form__input" type="password" name="password" id="password" placeholder="Пароль"
+                        required>
+                    <button class="form__button" type="submit">Войти</button>
+                    <p class="form__text">Нет аккаунта? <a href="#" id="registerLink">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-        <p>Галкиева Альмира, Окашева Ольга ИЯ-25, ИЯ-27</p>
+        <div class="container">
+            <p>Галкиева Альмира, Окашева Ольга ИЯ-25, ИЯ-27</p>
+        </div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
