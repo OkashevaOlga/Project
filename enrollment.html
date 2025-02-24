@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на курс</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/enrollment.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="header__logo" src="images/logo.png" alt="Логотип" width="150" height="150">
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
+                    <li class="header__item"><a class="header__link" href="teachers.html">Преподаватели</a></li>
+                    <li class="header__item"><a class="header__link" href="tariffs.html">Тарифы</a></li>
+                    <li class="header__item"><a class="header__link header__link--active"
+                            href="enrollment.html">Записаться на курс</a></li>
+                </ul>
+            </nav>
+            <button class="header__button" id="authButton">Вход/Регистрация</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="enrollment">
+            <div class="container">
+                <h1 class="enrollment__title">Записаться на курс</h1>
+                <form class="enrollment__form" action="/submit-enrollment" method="POST">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+                    <label for="course">Выберите курс</label>
+                    <select id="course" name="course" required>
+                        <option value="">Выберите курс...</option>
+                        <option value="chinese">Китайский язык</option>
+                        <option value="german">Немецкий язык</option>
+                        <option value="french">Французский язык</option>
+                        <option value="english">Английский язык</option>
+                    </select>
+
+                    <button type="submit" class="enrollment__button">Записаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Галкиева Альмира, Окашева Ольга ИЯ-25, ИЯ-27</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
