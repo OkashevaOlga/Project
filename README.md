@@ -8,10 +8,10 @@
 ---
 # Реализация проекта:
 - 6.11 - создана структура папок - структура проекта
-- -:- - сверстаны основные страницы: `index.html`, `teachers.html`, `tariffs html`, `enrollment.html`
-- -:- - добавлены стили: `normalize.css`, `style.css`, `header.css`, `footer.css`, `modal.css`, `form.css`
-- -:- - добавлены скрипты: `script.js`, `modal.js`, `validation.js`
-- -:- - завершена адаптивность и интерактивность модальных окон и форм регистрации
+- 13.11 - сверстаны основные страницы: `index.html`, `teachers.html`, `tariffs html`, `enrollment.html`
+- 20:11 - добавлены стили: `normalize.css`, `style.css`, `header.css`, `footer.css`, `modal.css`, `form.css`
+- 11:12 - добавлены скрипты: `script.js`, `modal.js`, `validation.js`
+- 14:02 - завершена адаптивность и интерактивность модальных окон и форм регистрации
 - -:- - итоговая проверка и тестирование функционала сайта
 ---
 # Корневая папка проекта:
