@@ -26,12 +26,14 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    list-style-type: none;
 }
 
 .header__link {
     color: white;
     font-size: 18px;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 .header__link:hover,

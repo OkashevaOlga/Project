@@ -1,0 +1,94 @@
+.enrollment__form input {
+    padding: 5px;
+    /*внутренний отступ*/
+    border-radius: 8px;
+    /*края будут закруглены с радиусом в 8 пикселей */
+}
+
+.enrollment__form select {
+    padding: 5px;
+    /*внутренний отступ*/
+    border-radius: 8px;
+    /*края будут закруглены с радиусом в 8 пикселей */
+}
+
+.enrollment__form button {
+    text-decoration: none;
+    /*убираем подчеркивание*/
+    border: 2px solid #fff;
+    /*изменяем границу или рамку*/
+    border-radius: 8px;
+    /*края будут закруглены с радиусом в 8 пикселей */
+    padding: 5px;
+    /*внутренний отступ*/
+    background-color: #dfbc4b;
+    /*цвет фона*/
+    color: rgb(34, 29, 29);
+    /*цвет текста*/
+}
+
+.enrollment__form {
+    display: flex;
+    /* гибкое отображение */
+    flex-direction: column;
+    /* поставим все элементы вертикально*/
+    gap: 5px;
+    /*добавим отступы между элементами */
+    width: 300px;
+    /*укажем ширину всей формы*/
+}
+
+.teacher__card {
+    width: 350px;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.teacher__name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.teacher__job {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.teacher__desc {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.teachers__list {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.teacher__card {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+}
+
+.teacher__link {
+    margin-top: auto;
+}
+
+.teacher__image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+   }
+   
+   
