@@ -1,0 +1,107 @@
+.bottom-nav {
+    border-radius: 24px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+    padding: 12px 32px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(247, 249, 252, 0.92);
+    border: none;
+    margin: 0 auto 40px auto;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    width: fit-content;
+    margin-top: 24px;
+    white-space: nowrap;
+    transition: box-shadow 0.2s, background 0.2s, top 0.2s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-nav--fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    margin: 50;
+    width: fit-content;
+    z-index: 2000;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.20);
+}
+
+.bottom-nav__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.bottom-nav__item {
+    border-radius: 16px;
+    transition: background 0.3s;
+}
+
+.bottom-nav__item:hover {
+    background: #3a7afe;
+}
+
+.bottom-nav__item:hover .bottom-nav__link {
+    color: #fff;
+}
+
+.bottom-nav__link {
+    text-decoration: none;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s, transform 0.1s;
+    padding: 8px 18px;
+    display: block;
+    border-radius: 16px;
+    white-space: nowrap;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.bottom-nav__link:active {
+    background: #e6f0ff;
+    color: #255ed6;
+    box-shadow: 0 2px 6px rgba(58, 122, 254, 0.10);
+    transform: scale(0.97);
+}
+
+.bottom-nav__btn {
+    background: transparent;
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 16px;
+    padding: 12px 18px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+    outline: none;
+    cursor: pointer;
+    margin: 0 2px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.bottom-nav__btn.active,
+.bottom-nav__btn:focus {
+    background: #3a7afe;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(58, 122, 254, 0.10);
+}
+
+.bottom-nav__btn:hover:not(.active) {
+    background: #3a7afe;
+    color: #fff;
+}
+
+.bottom-nav__btn:active {
+    background: #255ed6;
+    color: #fff;
+    transform: scale(0.97);
+}
