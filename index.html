@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн школа</title>
+    <!-- Подключение основных стилей -->
+    <link rel="stylesheet" href="../src/assets/styles/style.css">
+    <!-- Удалён Swiper CSS -->
+</head>
+
+<body>
+    <!-- ===== ПРЕЛОДЕР ===== -->
+    <div id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- ===== ХЕДЕР (шапка сайта) ===== -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo-block">
+                <img src="../src/assets/images/Lo.svg" alt="Логотип" class="header__logo">
+                <div class="header__brand">
+                    <span class="header__sitename">LingvoMaster</span>
+                    <span class="header__subtitle">Онлайн-школа иностранных языков</span>
+                </div>
+            </div>
+            <button class="header__button header__login">Войти</button>
+        </div>
+    </header>
+
+    <!-- ===== HERO-БЛОК (главный баннер) ===== -->
+    <div class="hero-bg">
+        <section class="school-info">
+            <h2 class="school-info__title">О нашей онлайн-школе</h2>
+            <p class="school-info__desc">
+                Наша онлайн-школа иностранных языков — это современный образовательный проект, который объединяет лучших
+                преподавателей и инновационные методики обучения. Мы предлагаем курсы для любого уровня, индивидуальный
+                подход и гибкий график занятий!
+            </p>
+            <button class="school-info__button" id="to-teachers-btn">Подробнее о школе</button>
+        </section>
+    </div>
+
+    <main class="main">
+        <!-- ===== НАВИГАЦИЯ (нижнее меню) ===== -->
+        <nav class="bottom-nav" id="floatingNav">
+            <ul class="bottom-nav__list">
+                <li class="bottom-nav__item"><button class="bottom-nav__btn" data-scroll="main">Главная</button></li>
+                <li class="bottom-nav__item"><button class="bottom-nav__btn"
+                        data-scroll="teachers">Преподаватели</button></li>
+                <li class="bottom-nav__item"><button class="bottom-nav__btn" data-scroll="tariffs">Тарифы</button></li>
+                <li class="bottom-nav__item"><button class="bottom-nav__btn" data-scroll="enroll">Записаться на
+                        курс</button></li>
+                <li class="bottom-nav__item"><button class="bottom-nav__btn" data-scroll="reviews">Отзывы</button></li>
+            </ul>
+        </nav>
+
+        <!-- ===== БЛОК ПРЕПОДАВАТЕЛЕЙ ===== -->
+        <section class="teachers" id="teachers">
+            <div class="container">
+                <h1 class="teachers__title">Наши преподаватели</h1>
+                <div class="teachers__list">
+                    <div class="teacher__card">
+                        <img class="teacher__image" src="../src/assets/images/chineseteacher.jpg"
+                            alt="Преподаватель китайского" width="350" height="500">
+                        <h2 class="teacher__name">Екатерина Анатольевна Романова</h2>
+                        <h3 class="techer_job">Преподаватель китайского языка</h3>
+                        <p class="teacher__desc">Дипломированный специалист по китайскому языку, уровень HSK6, более 10
+                            лет опыта.</p>
+                    </div>
+                    <div class="teacher__card">
+                        <img class="teacher__image" src="../src/assets/images/germanteacher.png"
+                            alt="Преподаватель немецкого" width="350" height="500">
+                        <h2 class="teacher__name">Дарья Альбертовна Гольман</h2>
+                        <h3 class="techer_job">Преподаватель немецкого языка</h3>
+                        <p class="teacher__desc">Жила более 8 лет в Германии, опыт преподавания 5 лет, инновационные
+                            методики.</p>
+                    </div>
+                    <div class="teacher__card">
+                        <img class="teacher__image" src="../src/assets/images/frenchteacher.jpg"
+                            alt="Преподаватель французского" width="350" height="500">
+                        <h2 class="teacher__name">Александра Викторовна Леруа</h2>
+                        <h3 class="techer_job">Преподаватель французского языка</h3>
+                        <p class="teacher__desc">Опыт работы во Франции, авторская методика обучения.</p>
+                    </div>
+                    <div class="teacher__card">
+                        <img class="teacher__image" src="../src/assets/images/englishteacher.png"
+                            alt="Преподаватель английского" width="350" height="500">
+                        <h2 class="teacher__name">Анастасия Алексеевна Воронцова</h2>
+                        <h3 class="techer_job">Преподаватель английского языка</h3>
+                        <p class="teacher__desc">Сертификат CELTA, 7 лет преподавания в международных школах.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ТАРИФНЫЕ ПЛАНЫ ===== -->
+        <section class="tariffs" id="tariffs">
+            <div class="container">
+                <div class="tariffs__header">
+                    <h1 class="tariffs__title">Наши тарифные планы</h1>
+                    <div class="tariffs__arrows">
+                        <button class="tariffs__arrow tariffs__arrow--left" aria-label="Назад">&#8592;</button>
+                        <button class="tariffs__arrow tariffs__arrow--right" aria-label="Вперёд">&#8594;</button>
+                    </div>
+                </div>
+                <div class="tariffs__slider">
+                    <div class="tariffs__list">
+                        <div class="tariff__card">
+                            <h2 class="tariff__name">Пробник</h2>
+                            <p class="tariff__desc">Онлайн занятие</p>
+                            <ul class="tariff__features">
+                                <li>1 пробное занятие</li>
+                                <li>Знакомство с преподавателем</li>
+                                <li>Оценка уровня знаний</li>
+                                <li>Индивидуальные рекомендации</li>
+                            </ul>
+                            <p class="tariff__price">Бесплатно</p>
+                            <button class="tariff__button scroll-to-enroll">Выбрать</button>
+                        </div>
+                        <div class="tariff__card">
+                            <h2 class="tariff__name">Базовый</h2>
+                            <p class="tariff__desc">4 занятия в месяц</p>
+                            <ul class="tariff__features">
+                                <li>Групповые онлайн-уроки</li>
+                                <li>Доступ к учебным материалам</li>
+                                <li>Домашние задания
+                                <li>Обратная связь от преподавателя</li>
+                            </ul>
+                            <p class="tariff__price">3 000 ₽</p>
+                            <button class="tariff__button scroll-to-enroll">Выбрать</button>
+                        </div>
+                        <div class="tariff__card">
+                            <h2 class="tariff__name">Стандарт</h2>
+                            <p class="tariff__desc">8 занятий в месяц</p>
+                            <ul class="tariff__features">
+                                <li>Всё из "Базового"</li>
+                                <li>Дополнительные практические занятия</li>
+                                <li>Доступ к онлайн-платформе 24/7</li>
+                                <li>Промежуточное тестирование</li>
+                            </ul>
+                            <p class="tariff__price">5 500 ₽</p>
+                            <button class="tariff__button scroll-to-enroll">Выбрать</button>
+                        </div>
+                        <div class="tariff__card">
+                            <h2 class="tariff__name">Премиум</h2>
+                            <p class="tariff__desc">12 занятий в месяц</p>
+                            <ul class="tariff__features">
+                                <li>Всё из "Стандарта"</li>
+                                <li>Индивидуальные консультации</li>
+                                <li>Личный куратор</li>
+                                <li>Доступ к эксклюзивным материалам</li>
+                            </ul>
+                            <p class="tariff__price">8 000 ₽</p>
+                            <button class="tariff__button scroll-to-enroll">Выбрать</button>
+                        </div>
+                        <div class="tariff__card">
+                            <h2 class="tariff__name">Все сам</h2>
+                            <p class="tariff__desc">Доступ к записям вебинаров
+                            </p>
+                            <ul class="tariff__features">
+                                <li>Все записи вебинаров</li>
+                                <li>Материалы для самостоятельного изучения</li>
+                                <li>Тесты для самопроверки</li>
+                            </ul>
+                            <p class="tariff__price">10 000 ₽</p>
+                            <button class="tariff__button scroll-to-enroll">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tariffs__dots"></div>
+            </div>
+        </section>
+
+        <!-- ===== ФОРМА ЗАПИСИ НА КУРС ===== -->
+        <section class="enrollment-wide" id="enroll">
+            <div class="enrollment-wide__container">
+                <div class="enrollment-wide__offer">
+                    <h2 class="enrollment-wide__offer-title">Ваша выгода!</h2>
+                    <p class="enrollment-wide__discount">Скидка <span class="enrollment-wide__discount-value">50%</span>
+                        на первый заказ!</p>
+                    <div class="enrollment-wide__timer">
+                        <span class="enrollment-wide__timer-label">До конца акции:</span>
+                        <span id="discount-timer" class="enrollment-wide__timer-value">15:00</span>
+                    </div>
+                </div>
+                <div class="enrollment-wide__form-block">
+                    <div class="enrollment__title-wrapper">
+                        <h2 class="enrollment__title">Записаться на курс</h2>
+                    </div>
+                    <form class="enrollment__form" action="/submit-enrollment" method="POST">
+                        <label for="name">Как к вам обращаться?</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                        <label for="phone">Как с вами связаться?</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+                        <label for="course">Выберите курс</label>
+                        <select id="course" name="course" required>
+                            <option value="">Выберите курс...</option>
+                            <option value="chinese">Китайский язык</option>
+                            <option value="german">Немецкий язык</option>
+                            <option value="french">Французский язык</option>
+                            <option value="english">Английский язык</option>
+                        </select>
+
+                        <button type="submit" class="enroll-btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ОТЗЫВЫ ===== -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h1 class="reviews__title">Отзывы наших студентов</h1>
+                <div class="reviews__slider">
+                    <div class="reviews__list">
+                        <div class="review__card">
+                            <div class="review__img-block">
+                                <img src="../src/assets/images/review1.jpg" alt="Студент Анна" class="review__img">
+                            </div>
+                            <div class="review__content">
+                                <h2 class="review__name">Анна, 23 года</h2>
+                                <p class="review__text">
+                                    Очень довольна обучением! Преподаватели внимательные, материал подаётся понятно, а
+                                    атмосфера на уроках всегда дружелюбная. Благодаря школе я уверенно заговорила на
+                                    английском!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review__card">
+                            <div class="review__img-block">
+                                <img src="../src/assets/images/review2.jpg" alt="Студент Иван" class="review__img">
+                            </div>
+                            <div class="review__content">
+                                <h2 class="review__name">Иван, 31 год</h2>
+                                <p class="review__text">
+                                    Прошёл курс немецкого — всё супер! Особенно понравился индивидуальный подход и
+                                    современные методики. Теперь могу свободно общаться с коллегами из Германии.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review__card">
+                            <div class="review__img-block">
+                                <img src="../src/assets/images/review3.jpg" alt="Студент Мария" class="review__img">
+                            </div>
+                            <div class="review__content">
+                                <h2 class="review__name">Мария, 27 лет</h2>
+                                <p class="review__text">
+                                    Спасибо школе за поддержку и мотивацию! Французский язык казался сложным, но с
+                                    такими преподавателями учиться легко и интересно. Рекомендую всем!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                Галкиева Альмира, Окашева Ольга ИЯ-25, ИЯ-27
+            </div>
+            <div class="footer__copyright">
+                © Онлайн-школа 2025
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== КНОПКА "НАВЕРХ" ===== -->
+    <button id="scrollToTopBtn" title="Наверх">&#8679;</button>
+
+    <!-- ===== МОДАЛЬНОЕ ОКНО: Вход/Регистрация ===== -->
+    <div class="dialog" hidden>
+        <div class="dialog__content">
+            <!-- Переключатели форм -->
+            <div class="dialog__switcher">
+                <button type="button" class="dialog__tab dialog__tab--active" data-login>Вход</button>
+                <button type="button" class="dialog__tab" data-registration>Регистрация</button>
+            </div>
+            <!-- Форма входа -->
+            <form id="popup-login">
+                <input type="text" id="login-login" name="login" placeholder="Логин" required>
+                <input type="password" id="login-password" name="password" placeholder="Пароль" required>
+                <div id="error-message-login" class="dialog__error"></div>
+                <button type="submit" class="dialog__btn" disabled>Войти</button>
+            </form>
+            <!-- Форма регистрации -->
+            <form id="popup-registration" hidden>
+                <input type="text" id="username" name="username" placeholder="Имя пользователя" required>
+                <input type="text" id="login" name="login" placeholder="Логин" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="password" id="password" name="password" placeholder="Пароль" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторите пароль"
+                    required>
+                <div id="error-message" class="dialog__error"></div>
+                <button type="submit" class="dialog__btn" disabled>Зарегистрироваться</button>
+            </form>
+            <button type="button" class="dialog__close" aria-label="Закрыть" data-close>&times;</button>
+        </div>
+    </div>
+
+    <!-- ===== МОДАЛЬНОЕ ОКНО: Успешная запись ===== -->
+    <div class="enroll-success-modal" hidden>
+        <div class="enroll-success-modal__content">
+            <button class="enroll-success-modal__close" aria-label="Закрыть">&times;</button>
+            <h2>Заявка отправлена!</h2>
+            <p>Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+
+    <!-- ===== ПОДКЛЮЧЕНИЕ JS ===== -->
+    <script type="module" src="../src/scripts/main.js"></script>
+    <!-- Удалён Swiper JS -->
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => preloader.style.display = 'none', 400);
+            }
+        });
+    </script>
+</body>
+
+</html>
